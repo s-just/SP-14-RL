@@ -15,3 +15,5 @@ Our current goal is to build an environment and train an agent to explore that g
 Getting Started::
 
 To run the code in this repository, you will need to install the necessary dependencies, including Python 3.9.0 and Ultralytics. You can install these dependencies using the `requirements.txt` file provided.
+
+pip install -r requirements.txt
