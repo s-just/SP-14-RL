@@ -2,6 +2,8 @@ Reinforcement Learning Model for Cuphead::
 
 This repository contains my code for our senior project at KSU, where we are building a reinforcement learning model to play the game Cuphead.
 
+The main repo can be found here: 
+
 Object Recognition with YoloV8::
 
 The current implementation includes object recognition using YoloV8, with a starting point for overlap detection. This is an important component of the project as it will enable the agent to identify, locate, and avoid collisions with the game environment.
