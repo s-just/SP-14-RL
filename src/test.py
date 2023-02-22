@@ -38,25 +38,27 @@ def get_overlaps(objects):
 
 
 # Set current working directory and load model
-# HOME = os.getcwd()
-# model = YOLO(f'{HOME}/weights/best.pt')
+HOME = os.getcwd()
+model = YOLO(f'{HOME}/src/weights/best.pt')
 
-# Test object recognition by getting data from screen
-# obj_recognition = OR.ObjectRecognition(model, (0, 40, 640, 480), True, 0.2)
-# result = obj_recognition.get_screen_data()
+while True:
+    # Test object recognition by getting data from screen
+    obj_recognition = OR.ObjectRecognition(model, (0, 40, 640, 480), True, 0.2)
+    result = obj_recognition.get_screen_data()
+    print(result)
 
 # Test overlap detection
-all_objects = [[-3, -3, -2, -2], [2, 2, 4, 5]]
-overlaps = get_overlaps(all_objects)
-print("Test Case 1: ([-3, -3, -2, -2], [2, 2, 4, 5])", " - Result : ", overlaps)
-
-all_objects = [[3, 3, 2, 2], [2, 2, 4, 5]]
-overlaps = get_overlaps(all_objects)
-print("Test Case 2: ([3, 3, 2, 2], [2, 2, 4, 5])", " - Result : ", overlaps)
-
-all_objects = [[2, 2, 4, 5], [3, 3, 2, 2]]
-overlaps = get_overlaps(all_objects)
-print("Test Case 3: ([2, 2, 4, 5], [3, 3, 2, 2])", " - Result : ", overlaps)
+# all_objects = [[-3, -3, -2, -2], [2, 2, 4, 5]]
+# overlaps = get_overlaps(all_objects)
+# print("Test Case 1: ([-3, -3, -2, -2], [2, 2, 4, 5])", " - Result : ", overlaps)
+#
+# all_objects = [[3, 3, 2, 2], [2, 2, 4, 5]]
+# overlaps = get_overlaps(all_objects)
+# print("Test Case 2: ([3, 3, 2, 2], [2, 2, 4, 5])", " - Result : ", overlaps)
+#
+# all_objects = [[2, 2, 4, 5], [3, 3, 2, 2]]
+# overlaps = get_overlaps(all_objects)
+# print("Test Case 3: ([2, 2, 4, 5], [3, 3, 2, 2])", " - Result : ", overlaps)
 
 # Currently we can't test with the Object Recognition model as we need to finish labeling the data, so it can be
 # trained and loaded in Python.

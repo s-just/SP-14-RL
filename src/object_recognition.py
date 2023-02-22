@@ -23,7 +23,7 @@ class ObjectRecognition:
     def get_screen_data(self):
         last_time = time.time()
         self.curr_screen = np.array(ImageGrab.grab(bbox=self.bounding_box))
-        results = model.predict(cv2.cvtColor(self.curr_screen, cv2.COLOR_BGR2RGB), conf=self.conf_threshold,
+        results = self.model.predict(cv2.cvtColor(self.curr_screen, cv2.COLOR_BGR2RGB), conf=self.conf_threshold,
                                 show=self.show_results)
         print('Time taken for OR model to get data from screen: ', str(time.time() - last_time))
         return results[0].boxes.boxes
@@ -33,5 +33,5 @@ class ObjectRecognition:
 #HOME = os.getcwd()
 #model = YOLO(f'{HOME}/weights/best.pt')
 
-#objrecognition = ObjectRecognition(model, (0, 40, 640, 480), True, 0.2)
-#objrecognition.get_screen_data()
+# objrecognition = ObjectRecognition(model, (0, 40, 640, 480), True, 0.2)
+# objrecognition.get_screen_data()
