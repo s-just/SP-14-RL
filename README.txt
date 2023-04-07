@@ -6,7 +6,7 @@ The main repo can be found here:
 
 Object Recognition with YoloV8::
 
-The current implementation includes object recognition using YoloV8, with a starting point for overlap detection. This is an important component of the project as it will enable the agent to identify, locate, and avoid collisions with the game environment.
+The current implementation includes object recognition using YoloV8, with a starting point for overlap detection. This is an important component of the project as it will enable the agent to identify, locate, and avoid collisions with the game environment. An environment is created using the object recognition and the state is then observed. The positional data being output is the bounding box of the player and slime. 
 
 Training an Agent to Beat the Slime Boss::
 
