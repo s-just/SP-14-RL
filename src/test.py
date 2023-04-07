@@ -78,7 +78,7 @@ class BossEnvironment:
             return -1
         else:
             # Player and boss haven't collided, player is alive so reward the agent
-            return 0
+            return 1
 
     def get_state(self):
 
