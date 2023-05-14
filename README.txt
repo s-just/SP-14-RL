@@ -2,7 +2,8 @@ Reinforcement Learning Model for Cuphead::
 
 This repository contains my code for our senior project at KSU, where we are building a reinforcement learning model to play the game Cuphead.
 
-I have rebuilt the project and uploaded here: 
+I have rebuilt the project and uploaded the working prototype here: 
+https://github.com/s-just/Cuphead_RL
 
 Object Recognition with YoloV8::
 
